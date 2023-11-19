@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+  margin: 0%;
+  color: #707070;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.touchable {
+  cursor: pointer;
+  transition: all 300ms;
+}
+.touchable:active {
+  opacity: 0.5;
+}
+.spin {
+  animation: spin 1000ms infinite;
+  opacity: 0.5;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
